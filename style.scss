@@ -5,3 +5,62 @@ $backgroundColor:#FBFBEC;
 $cherryPink: #F4B3C2;
 $middleGreen: #47885E;
 $jet: #2B2B2B;
+$ivory:#fbfbec;
+$white:#ffffff;
+
+
+body{
+	font-family: 'Playfair Display', serif;
+	background-color: $backgroundColor;
+}
+
+footer{
+	text-align: center;
+}
+
+header {
+	height:50vh; 
+	background-image:url("images/small.jpg");
+	background-repeat: no-repeat;
+	padding:1em;
+	font-family: 'Italianno', cursive;
+}
+
+header h1{
+	font-size: 4em;
+	margin:0;
+}
+
+header h2{
+	font-size: 2.5em;
+	color:$white;
+}
+ 
+
+@media screen and (max-width: 20rem){
+.page-wrapper{
+	display:grid;
+	background-color: yellow;
+	grid-template-columns: 1fr;
+	min-width: 320px;
+	grid-gap: 10px;
+	grid-template-areas: 
+ 	"intro"
+	"aside"
+	"main";
+}
+
+.intro{
+	grid-area:intro;
+	}
+ 
+aside{
+	grid-area:aside;
+}
+
+.main{
+	grid-area:main;
+}
+ 
+
+}
