@@ -1,36 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display&display=swap");
 body {
-  font-family: 'Playfair Display', serif;
   background-color: #FBFBEC;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Italianno", cursive;
+  font-size: 4em;
+  margin: 0 0 0 0.5em;
+  color: #2B2B2B;
+}
+
+h2 {
+  font-family: "Italianno", cursive;
+  font-size: 3em;
+  margin: 0 0 0 3em;
+  color: #2B2B2B;
+}
+
+h3 {
+  font-family: "Italianno", cursive;
+  font-size: 2em;
+}
+
+aside h3 {
+  color: #47885E;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  font-size: 1em;
+  margin-left: 1.5%;
+}
+
+#zen-preamble {
+  margin: 0 auto;
+  border-top: solid 2px #47885E;
+  border-bottom: solid 2px #47885E;
+  padding: 1em;
+}
+
+.main {
+  max-width: 80%;
+  padding-left: 2%;
+}
+
+aside {
+  background-color: #F4B3C2;
+  padding: 0.5em;
+  right: 1em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper ul {
+  list-style: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  color: #FBFBEC;
+}
+
+ul a {
+  text-decoration: none;
+  color: #FBFBEC;
+}
+
+a:hover {
+  text-shadow: 2px 5px 5px #FBFBEC;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #47885E;
 }
 
 footer {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2B2B2B;
+  height: 15em;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header {
-  height: 50vh;
-  background-image: url("images/small.jpg");
-  background-repeat: no-repeat;
-  padding: 1em;
-  font-family: 'Italianno', cursive;
+footer a {
+  padding: 10px 10px 10px 10px;
+  color: #FBFBEC;
 }
 
-header h1 {
-  font-size: 4em;
-  margin: 0;
-}
-
-header h2 {
-  font-size: 2.5em;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 20rem) {
+@media screen and (max-width: 394px) {
   .page-wrapper {
     display: -ms-grid;
     display: grid;
-    background-color: yellow;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     min-width: 320px;
@@ -51,6 +116,20 @@ header h2 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: main;
+  }
+}
+
+@media only screen and (min-width: 395px) {
+  #zen-preamble {
+    width: 70%;
+  }
+  .main {
+    max-width: 65%;
+  }
+  aside {
+    position: absolute;
+    top: 750px;
+    width: 27%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,47 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display&display=swap');
+ 
+//variables
+$italianno:'Italianno', cursive;
+$paragraph:'Playfair Display', serif;
 
 //colors
-$backgroundColor:#FBFBEC;
-$cherryPink: #F4B3C2;
-$middleGreen: #47885E;
-$jet: #2B2B2B;
-$ivory:#fbfbec;
-$white:#ffffff;
+$ivory:#FBFBEC;
+$pink:#F4B3C2;
+$brown:#2B2B2B;
+$green:#47885E;
+$white: #fff;
 
-
+//basic style
 body{
-	font-family: 'Playfair Display', serif;
-	background-color: $backgroundColor;
+	background-color: $ivory;
+    margin: 0 auto;
 }
+
+h1{
+	font-family: $italianno;
+	font-size: 4em;
+	margin: 0 0 0 0.5em;
+	color: $brown;
+	}
+h2{
+	font-family:$italianno;
+	font-size: 3em;
+	margin: 0 0 0 3em;
+	color: $brown;
+  }
+h3{
+	font-family: $italianno;
+	font-size: 2em;
+   }
+aside h3{
+	color: $green;
+	}
+p{
+	font-family: $paragraph;
+	font-size: 1em;
+  margin-left: 1.5%; 
+    
+ } 
+
+ #zen-preamble{
+//	width:70%; LARGE
+	margin: 0 auto;
+	border-top: solid 2px $green;
+	border-bottom: solid 2px $green;
+	padding:1em;
+ }
+.main{
+//max-width: 65%; LARGE
+  max-width:80%; 
+  padding-left: 2%;
+}
+
+aside{
+    background-color: $pink;
+    padding:0.5em;
+   // position: absolute; LARGE
+   // top:750px; LARGE
+    right:1em;
+   // width: 27%; LARGE
+   width:80%;
+   margin:0 auto;
+}	
+
+.wrapper ul{
+	list-style: none;
+	font-family: $paragraph;
+	font-size: 1.2em;
+	color:  $ivory;
+}	
+
+ul a{
+    text-decoration: none;
+    color:  $ivory;
+}
+ a:hover{
+    text-shadow: 2px 5px 5px   $ivory;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $green;
+}
+
 
 footer{
-	text-align: center;
-}
+    display: flex;
+    background-color: $brown;
+    height: 15em;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+a {
+    padding: 10px 10px 10px 10px;
+    color:  $ivory;
+}}
 
-header {
-	height:50vh; 
-	background-image:url("images/small.jpg");
-	background-repeat: no-repeat;
-	padding:1em;
-	font-family: 'Italianno', cursive;
-}
 
-header h1{
-	font-size: 4em;
-	margin:0;
-}
 
-header h2{
-	font-size: 2.5em;
-	color:$white;
-}
- 
-
-@media screen and (max-width: 20rem){
+//SMALL view
+@media screen and (max-width: 394px){
 .page-wrapper{
 	display:grid;
-	background-color: yellow;
-	grid-template-columns: 1fr;
+ 	grid-template-columns: 1fr;
 	min-width: 320px;
 	grid-gap: 10px;
 	grid-template-areas: 
@@ -61,6 +124,25 @@ aside{
 .main{
 	grid-area:main;
 }
- 
 
 }
+
+
+//LARGE view
+@media only screen and (min-width: 395px){
+	#zen-preamble{
+		width:70%; 
+
+	}	
+
+	.main{
+		max-width: 65%;
+	}	
+
+	aside{
+	  position: absolute; 
+	  top:750px; 
+	  width: 27%; 
+	}	
+
+}	
