@@ -92,7 +92,7 @@ footer a {
   color: #FBFBEC;
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 30em) {
   .page-wrapper {
     display: -ms-grid;
     display: grid;
@@ -119,7 +119,7 @@ footer a {
   }
 }
 
-@media only screen and (min-width: 395px) {
+@media only screen and (min-width: 30em) {
   #zen-preamble {
     width: 70%;
   }

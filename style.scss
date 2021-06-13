@@ -101,7 +101,7 @@ a {
 
 
 //SMALL view
-@media screen and (max-width: 394px){
+@media screen and (max-width: 30em){
 .page-wrapper{
 	display:grid;
  	grid-template-columns: 1fr;
@@ -129,7 +129,7 @@ aside{
 
 
 //LARGE view
-@media only screen and (min-width: 395px){
+@media only screen and (min-width: 30em){
 	#zen-preamble{
 		width:70%; 
 
