@@ -78,6 +78,9 @@ ul a{
     text-decoration: none;
     color:  $ivory;
 }
+a {
+    transition: 1s;
+}
  a:hover{
     text-shadow: 2px 5px 5px   $ivory;
     font-size: 1.1em;
