@@ -4,6 +4,12 @@ body {
   margin: 0 auto;
 }
 
+header {
+  background: #f4b3c2;
+  background: -webkit-gradient(linear, left top, right top, from(#f4b3c2), color-stop(32%, #f4b3c2), to(rgba(0, 212, 255, 0)));
+  background: linear-gradient(90deg, #f4b3c2 0%, #f4b3c2 32%, rgba(0, 212, 255, 0) 100%);
+}
+
 h1 {
   font-family: "Italianno", cursive;
   font-size: 4em;
@@ -53,6 +59,18 @@ aside {
   margin: 0 auto;
 }
 
+aside a {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+aside a:hover {
+  text-shadow: 2px 5px 5px #FBFBEC;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #47885E;
+}
+
 .wrapper ul {
   list-style: none;
   font-family: "Playfair Display", serif;
@@ -63,18 +81,6 @@ aside {
 ul a {
   text-decoration: none;
   color: #FBFBEC;
-}
-
-a {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-a:hover {
-  text-shadow: 2px 5px 5px #FBFBEC;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #47885E;
 }
 
 footer {

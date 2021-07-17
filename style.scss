@@ -17,6 +17,11 @@ body{
     margin: 0 auto;
 }
 
+header{
+	background: rgb(244,179,194);
+background: linear-gradient(90deg, rgba(244,179,194,1) 0%, rgba(244,179,194,1) 32%, rgba(0,212,255,0) 100%);
+}
+
 h1{
 	font-family: $italianno;
 	font-size: 4em;
@@ -65,6 +70,15 @@ aside{
    // width: 27%; LARGE
    width:80%;
    margin:0 auto;
+a {
+    transition: 1s;
+}
+a:hover{
+    text-shadow: 2px 5px 5px   $ivory;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $green;
+}
 }	
 
 .wrapper ul{
@@ -78,15 +92,7 @@ ul a{
     text-decoration: none;
     color:  $ivory;
 }
-a {
-    transition: 1s;
-}
- a:hover{
-    text-shadow: 2px 5px 5px   $ivory;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: $green;
-}
+
 
 
 footer{
