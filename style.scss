@@ -30,6 +30,12 @@ background: linear-gradient(90deg, rgba(244,179,194,1) 0%, rgba(244,179,194,1) 4
 		right:0;
 		top: 0;
 	}
+
+.smcle{
+  fill:$pink;
+  display: inline;
+}
+
 h1{
 	font-family: $italianno;
 	font-size: 4em;
@@ -46,6 +52,7 @@ h2{
 h3{
 	font-family: $italianno;
 	font-size: 2em;
+	display: contents;
    }
 aside h3{
 	color: $green;
