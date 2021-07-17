@@ -5,9 +5,18 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 5;
   background: #f4b3c2;
-  background: -webkit-gradient(linear, left top, right top, from(#f4b3c2), color-stop(32%, #f4b3c2), to(rgba(0, 212, 255, 0)));
-  background: linear-gradient(90deg, #f4b3c2 0%, #f4b3c2 32%, rgba(0, 212, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f4b3c2), color-stop(44%, #f4b3c2), color-stop(61%, rgba(244, 179, 194, 0.824265)), color-stop(73%, rgba(244, 179, 194, 0.350875)), color-stop(79%, rgba(148, 192, 218, 0)), color-stop(87%, rgba(0, 212, 255, 0)));
+  background: linear-gradient(90deg, #f4b3c2 0%, #f4b3c2 44%, rgba(244, 179, 194, 0.824265) 61%, rgba(244, 179, 194, 0.350875) 73%, rgba(148, 192, 218, 0) 79%, rgba(0, 212, 255, 0) 87%);
+}
+
+.headimg {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  top: 0;
 }
 
 h1 {
@@ -15,6 +24,7 @@ h1 {
   font-size: 4em;
   margin: 0 0 0 0.5em;
   color: #2B2B2B;
+  text-shadow: 2px 5px 5px #F4B3C2;
 }
 
 h2 {
